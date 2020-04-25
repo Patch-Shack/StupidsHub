@@ -1,0 +1,215 @@
+-- Open Source Because Wiz Won't Let Me Obfuscate It
+local StupidHub = Instance.new("ScreenGui")
+local Background = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local HomeFrame = Instance.new("ImageButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local top = Instance.new("TextLabel")
+local invite = Instance.new("TextLabel")
+local GAMER = Instance.new("TextLabel")
+local ExecuteBtn = Instance.new("ImageButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local Username = Instance.new("TextLabel")
+local PARENT
+if game:GetService("CoreGui"):FindFirstChild('RobloxGui') then
+    PARENT = game:GetService("CoreGui").RobloxGui
+else
+    PARENT = game:GetService("CoreGui")
+end
+function randomString()
+    local length = math.random(10,20)
+    local array = {}
+    for i = 1, length do
+        array[i] = string.char(math.random(32, 126))
+    end
+    return table.concat(array)
+end
+StupidHub.Name = randomString()
+StupidHub.Parent = PARENT
+StupidHub.ResetOnSpawn = false
+Background.Name = "Background"
+Background.Parent = StupidHub
+Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background.BackgroundTransparency = 1.000
+Background.Position = UDim2.new(0.317593873, 0, 0.205656275, 0)
+Background.Size = UDim2.new(0, 378, 0, 309)
+Background.Image = "rbxassetid://2790382281"
+Background.ImageColor3 = Color3.fromRGB(81, 18, 7)
+Background.ScaleType = Enum.ScaleType.Slice
+Background.SliceCenter = Rect.new(4, 4, 252, 252)
+TextLabel.Parent = Background
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 2.000
+TextLabel.Position = UDim2.new(0.0239058044, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 109, 0, 36)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Stupid's Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = Background
+HomeFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeFrame.BackgroundTransparency = 1.000
+HomeFrame.Position = UDim2.new(0.025550276, 0, 0.115527511, 0)
+HomeFrame.Size = UDim2.new(0, 358, 0, 259)
+HomeFrame.Image = "rbxassetid://2790382281"
+HomeFrame.ImageColor3 = Color3.fromRGB(107, 107, 107)
+HomeFrame.ScaleType = Enum.ScaleType.Slice
+HomeFrame.SliceCenter = Rect.new(4, 4, 252, 252)
+ScrollingFrame.Parent = HomeFrame
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(26, 2, 1)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0223463681, 0, 0.216216221, 0)
+ScrollingFrame.Size = UDim2.new(0, 341, 0, 111)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0351906158, 0, 0.00721963495, 0)
+TextLabel_2.Size = UDim2.new(0, 317, 0, 16)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "[Random stuff here]"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_3.Parent = ScrollingFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0351906158, 0, 0.0218914486, 0)
+TextLabel_3.Size = UDim2.new(0, 317, 0, 16)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "- Keybind to Open/Close: ."
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_4.Parent = ScrollingFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0351906158, 0, 0.0342466608, 0)
+TextLabel_4.Size = UDim2.new(0, 317, 0, 16)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "HyperSkeleton#0513 | Made GUI"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_5.Parent = ScrollingFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0351906158, 0, 0.0473740734, 0)
+TextLabel_5.Size = UDim2.new(0, 317, 0, 16)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = "Toon#9077 | Made The Scripts"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_6.Parent = ScrollingFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0351906158, 0, 0.0597292855, 0)
+TextLabel_6.Size = UDim2.new(0, 317, 0, 16)
+TextLabel_6.Font = Enum.Font.GothamBold
+TextLabel_6.Text = "Wiz#3812 | Being The Owner, lol"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+top.Name = "top"
+top.Parent = HomeFrame
+top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+top.BackgroundTransparency = 2.000
+top.Position = UDim2.new(0.0363128483, 0, 0.050193049, 0)
+top.Size = UDim2.new(0, 334, 0, 19)
+top.Font = Enum.Font.GothamBold
+top.Text = "Thanks For Using Stupid's Hub"
+top.TextColor3 = Color3.fromRGB(255, 255, 255)
+top.TextSize = 14.000
+invite.Name = "invite"
+invite.Parent = HomeFrame
+invite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+invite.BackgroundTransparency = 2.000
+invite.Position = UDim2.new(0.0363128483, 0, 0.123552121, 0)
+invite.Size = UDim2.new(0, 334, 0, 19)
+invite.Font = Enum.Font.GothamBold
+invite.Text = "Discord: qFM9uSQ"
+invite.TextColor3 = Color3.fromRGB(101, 0, 152)
+invite.TextSize = 14.000
+GAMER.Name = "GAMER"
+GAMER.Parent = HomeFrame
+GAMER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GAMER.BackgroundTransparency = 2.000
+GAMER.Position = UDim2.new(0.0335195512, 0, 0.6795367, 0)
+GAMER.Size = UDim2.new(0, 334, 0, 19)
+GAMER.Font = Enum.Font.GothamBold
+GAMER.Text = "[GAME DETECTED GOES HERE]"
+GAMER.TextColor3 = Color3.fromRGB(255, 255, 255)
+GAMER.TextSize = 14.000
+ExecuteBtn.Name = "ExecuteBtn"
+ExecuteBtn.Parent = HomeFrame
+ExecuteBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteBtn.BackgroundTransparency = 1.000
+ExecuteBtn.Position = UDim2.new(0.241802365, 0, 0.790187061, 0)
+ExecuteBtn.Size = UDim2.new(0, 185, 0, 40)
+ExecuteBtn.Image = "rbxassetid://2790389767"
+ExecuteBtn.ImageColor3 = Color3.fromRGB(96, 255, 120)
+ExecuteBtn.ScaleType = Enum.ScaleType.Slice
+ExecuteBtn.SliceCenter = Rect.new(8, 8, 248, 248)
+TextLabel_7.Parent = ExecuteBtn
+TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.505405426, 0, 0.49967885, 0)
+TextLabel_7.Size = UDim2.new(1.03937006, -5, 1.12499928, -5)
+TextLabel_7.Font = Enum.Font.GothamBold
+TextLabel_7.Text = "Execute"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextSize = 17.000
+TextLabel_7.TextWrapped = true
+Username.Name = "Username"
+Username.Parent = Background
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.Position = UDim2.new(0.363453805, 0, 0.0258899629, 0)
+Username.Size = UDim2.new(0, 258, 0, 20)
+Username.Font = Enum.Font.GothamBold
+Username.Text = "Welcome, [username]."
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextSize = 14.000
+local function WFYTHRP_fake_script() -- Background.LocalScript 
+	local script = Instance.new('LocalScript', Background)
+
+	script.parent.Selectable = true
+	script.Parent.Active = true
+	script.parent.Draggable = true
+	
+	p = game.Players.LocalPlayer
+		mouse = p:GetMouse()
+		
+		mouse.KeyDown:connect(function(key)
+		        if key == "." then
+		    if script.Parent.Visible == true then
+		        script.Parent.Visible = false
+		    else
+		        script.Parent.Visible = true
+		    end
+		        end
+		end)
+	
+end
+coroutine.wrap(WFYTHRP_fake_script)()
+local function UZBUCF_fake_script() -- Username.LocalScript 
+	local script = Instance.new('LocalScript', Username)
+
+	script.Parent.Text = ("Welcome, " .. game.Players.LocalPlayer.Name .. ".")
+end
+coroutine.wrap(UZBUCF_fake_script)()
+GAMER.Text = ("[Game : "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.."]")
+ExecuteBtn.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Patch-Shack/sHub/master/games", true))()
+end)
+loadstring(game:HttpGet("http://www.narwhalhacks.com/UI/NotificationUI.lua", true))()
+Notify("Stupid's Hub", "Thanks For Using The Hub", 5)
